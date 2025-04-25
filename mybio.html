@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bioloxav1</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Google+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #282828;
+            --container-bg: #3c3836;
+            --text-primary: #ebdbb2;
+            --text-secondary: #a89984;
+            --accent-1: #98971a;
+            --accent-2: #458588;
+            --accent-3: #d79921;
+            --shadow-color: rgba(0, 0, 0, 0.4);
+        }
+        
+        body {
+            font-family: 'Google Sans', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 10px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .bio-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: var(--container-bg);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px var(--shadow-color);
+            border: 1px solid #504945;
+        }
+        
+        h1 {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-2);
+            border-bottom: 2px solid var(--accent-3);
+            padding-bottom: 15px;
+            margin-top: 0;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        .bio-section {
+            margin-bottom: 30px;
+        }
+        
+        .bio-section h2 {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-1);
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        
+        .bio-entry {
+            display: flex;
+            margin-bottom: 8px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.95em;
+        }
+        
+        .bio-label {
+            min-width: 250px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        
+        .bio-value {
+            color: var(--text-primary);
+            font-weight: 400;
+        }
+        
+        .divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-3), transparent);
+            margin: 25px 0;
+            border: none;
+        }
+        
+        @media (max-width: 768px) {
+            .bio-container {
+                padding: 25px;
+                width: 95%;
+            }
+            
+            .bio-entry {
+                flex-direction: column;
+            }
+            
+            .bio-label {
+                min-width: 100%;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bio-container">
+        <h1>~/bio.txt</h1>
+        
+        <div class="bio-section">
+            <h2>Основа</h2>
+            <div class="bio-entry">
+                <span class="bio-label">| Имя:</span>
+                <span class="bio-value">Александр</span>
+            </div>
+            <div class="bio-entry">
+                <span class="bio-label">| Город:</span>
+                <span class="bio-value">Odessa, Ukraine 📍</span>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="bio-section">
+            <h2>Языки</h2>
+            <div class="bio-entry">
+                <span class="bio-label">| Языки, которые учу, знаю или способен понимать:</span>
+                <span class="bio-value">белорусский, латинский, норвежский, украинский, русский, немецкий, финский, английский</span>
+            </div>
+            <div class="bio-entry">
+                <span class="bio-label">| Языки программирования,которые учу:</span>
+                <span class="bio-value">Python, JS</span>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="bio-section">
+            <h2>Система</h2>
+            <div class="bio-entry">
+                <span class="bio-label">| IPv4 адрес:</span>
+                <span class="bio-value">127.0.0.1</span>
+            </div>
+            <div class="bio-entry">
+                <span class="bio-label">| OS:</span>
+                <span class="bio-value">Bedrock Linux</span>
+            </div>
+            <div class="bio-entry">
+                <span class="bio-label">| DE/WM:</span>
+                <span class="bio-value">GNOME 48</span>
+            </div>
+            <div class="bio-entry">
+                <span class="bio-label">| Увлечения:</span>
+                <span class="bio-value">техника, linux</span>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="bio-section">
+            <h2>Устройства</h2>
+            <div class="bio-entry">
+                <span class="bio-label">| Основной ноутбук:</span>
+                <span class="bio-value">Asus TUF Gaming A16 Advantage R7 7435HS RX 7600S (bedrock linux)</span>
+            </div>
+            <div class="bio-entry">
+                <span class="bio-label">| Сервер:</span>
+                <span class="bio-value">Asus Vivobook 17 I5-1035G1 (arch linux)</span>
+            </div>
+            <div class="bio-entry">
+                <span class="bio-label">| Основной телефон:</span>
+                <span class="bio-value">Pixel 7 Pro</span>
+            </div>
+            <div class="bio-entry">
+                <span class="bio-label">| Остальное:</span>
+                <span class="bio-value">iPhone 6, Samsung A01 Core, Samsung Tab S2, Samsung A23</span>
+            </div>
+            <div class="bio-entry">
+                <span class="bio-label">| Мышка, клавиатура:</span>
+                <span class="bio-value">AKKO 5075B Plus, Mchose A5</span>
+            </div>
+            <div class="bio-entry">
+                <span class="bio-label">| Остальное:</span>
+                <span class="bio-value">Hator Rockfall Mecha 2 TKL, bloody v3ma</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
